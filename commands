@@ -1,5 +1,5 @@
 
-docker build -t . student-microservice
+docker build -t student-microservice .
 
 kubectl apply -f namespace.yml
 
