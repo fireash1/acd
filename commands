@@ -17,4 +17,4 @@ kubectl get services -n student-ns
 
 kubectl get nodes
 
-kubectl port-forward -n student-ns svc/student-service 3000:8080
+Kubectl port-forward service/student-sercice 8080:8080 -n student-ns
