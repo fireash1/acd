@@ -1,0 +1,19 @@
+docker pull ssatyab/studentmarkservice:latest
+
+kubectl apply -f namespace.yml
+
+kubectl get namespaces
+
+kubectl apply -f deployment.yml
+
+kubectl get deployments -n student-ns
+
+kubectl get pods -n student-ns
+
+kubectl apply -f service.yml
+
+kubectl get services -n student-ns
+
+kubectl get nodes
+
+kubectl port-forward -n student-ns svc/student-service 3000:8080
