@@ -1,4 +1,5 @@
-docker pull ssatyab/studentmarkservice:latest
+
+docker build -t . student-microservice
 
 kubectl apply -f namespace.yml
 
